@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ConvExp</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    
+    <string-array name="apertures_array">
+        <item>0.7</item>
+        <item>0.8</item>
+        <item>1.0</item>
+        <item>1.2</item>
+        <item>1.4</item>
+        <item>1.7</item>
+        <item>2.0</item>
+        <item>2.4</item>
+        <item>2.8</item>
+        <item>3.5</item>
+        <item>4.0</item>
+        <item>4.5</item>
+        <item>5.6</item>
+        <item>6.7</item>
+        <item>8.0</item>
+        <item>9.5</item>
+        <item>11.0</item>
+        <item>13.0</item>
+        <item>16.0</item>
+        <item>22.0</item>
+        <item>27.0</item>
+        <item>32.0</item>
+    </string-array>
+    
+    <string-array name="exposure_time_array">
+        <item>1/8000</item>
+        <item>1/4000</item>
+        <item>1/2000</item>
+        <item>1/1000</item>
+        <item>1/500</item>
+        <item>1/250</item>
+        <item>1/125</item>
+        <item>1/60</item>
+        <item>1/30</item>
+        <item>1/15</item>
+        <item>1/8</item>
+        <item>1/4</item>
+        <item>1/2</item>
+        <item>1</item>
+        <item>2</item>
+        <item>4</item>
+        <item>8</item>
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+        <item>240</item>
+    </string-array>
+    
+    <string-array name="iso_array">
+        <item>25</item>
+        <item>50</item>
+        <item>100</item>
+        <item>125</item>
+        <item>200</item>
+        <item>320</item>
+        <item>400</item>
+        <item>800</item>
+        <item>1600</item>
+        <item>3200</item>
+        <item>6400</item>
+        <item>12800</item>
+        <item>25600</item>
+        <item>51200</item>
+    </string-array>
+
+</resources>

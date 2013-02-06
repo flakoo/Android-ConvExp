@@ -1,0 +1,32 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Calculator" >
+
+    <TableRow
+        android:id="@+id/inputExposureParams"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        
+        <Spinner android:id="@+id/inputApertureSpinner" />
+        <Spinner android:id="@+id/inputExposureTimeSpinner" />
+        <Spinner android:id="@+id/inputIsoSpinner" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/outputExposureParams"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        
+        <Spinner android:id="@+id/outputApertureSpinner" />
+        <Spinner android:id="@+id/outputIsoSpinner" />
+    </TableRow>
+    
+    <TableRow
+        android:id="@+id/outputExposureTimer"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+    </TableRow>
+
+</TableLayout>
