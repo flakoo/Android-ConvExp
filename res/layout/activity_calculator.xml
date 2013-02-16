@@ -1,32 +1,106 @@
 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
     tools:context=".Calculator" >
-
-    <TableRow
-        android:id="@+id/inputExposureParams"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
-        
-        <Spinner android:id="@+id/inputApertureSpinner" />
-        <Spinner android:id="@+id/inputExposureTimeSpinner" />
-        <Spinner android:id="@+id/inputIsoSpinner" />
-    </TableRow>
-
-    <TableRow
-        android:id="@+id/outputExposureParams"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content">
-        
-        <Spinner android:id="@+id/outputApertureSpinner" />
-        <Spinner android:id="@+id/outputIsoSpinner" />
+    
+    <TableRow android:layout_width="fill_parent">
+        <TextView android:id="@+id/inputSectionabel"
+	        android:text="@string/input_params"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_span="3"
+	        android:lines="1"
+	        android:textAppearance="?android:attr/textAppearanceLarge"/>
     </TableRow>
     
-    <TableRow
-        android:id="@+id/outputExposureTimer"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
+    <TableRow android:layout_width="fill_parent">
+        <TextView android:id="@+id/inputIsoLabel"
+	        android:text="@string/iso_short"
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content" />
+	    <TextView android:id="@+id/inputApertureLabel"
+	        android:text="@string/aperture_number_short"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" />
+	    <TextView android:id="@+id/inputExpTimeLabel"
+	        android:text="@string/exposure_time_short" 
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content" />
     </TableRow>
-
+    
+    <TableRow android:layout_width="fill_parent">
+        <Spinner android:id="@+id/inputIsoSpinner" 
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content" />
+	    <Spinner android:id="@+id/inputApertureSpinner"
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content" />
+	    <Spinner android:id="@+id/inputExposureTimeSpinner" 
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content" />
+	</TableRow>
+	
+    <TableRow android:layout_width="fill_parent">
+        <TextView android:id="@+id/outputSectionLabel"
+	        android:text="@string/output_params"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" 
+	        android:layout_span="3"
+	        android:lines="1"
+	        android:textAppearance="?android:attr/textAppearanceLarge"/>
+    </TableRow>
+    
+    <TableRow android:layout_width="wrap_content">
+        <TextView android:id="@+id/outputIsoLabel"
+	        android:text="@string/iso_short" 
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content" />
+	    <TextView android:id="@+id/outputApertureLabel"
+	        android:text="@string/aperture_number_short" 
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content" />
+	</TableRow>
+    
+    <TableRow android:layout_width="wrap_content">
+        <Spinner android:id="@+id/outputIsoSpinner" 
+	        android:layout_width="fill_parent" 
+	        android:layout_height="wrap_content" />
+	    <Spinner android:id="@+id/outputApertureSpinner" 
+	        android:layout_width="wrap_content" 
+	        android:layout_height="wrap_content" />
+	</TableRow>
+	
+    <TableRow android:layout_width="wrap_content">
+        <Button android:id="@+id/calculateButton"
+	        android:text="@string/calculate"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" 
+	        android:layout_span="3"/>
+    </TableRow>
+    
+    <TableRow android:layout_width="wrap_content">
+        <TextView android:id="@+id/caculatedTime"
+	        android:text="@string/default_time"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" 
+	        android:layout_span="3"
+	        android:lines="1"
+	        android:textAppearance="?android:attr/textAppearanceLarge"/>
+    </TableRow>
+    
+    <TableRow android:layout_width="wrap_content">
+        <Button android:id="@+id/timerButton"
+	        android:text="@string/start_timer"
+	        android:drawableLeft="@drawable/ic_time"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" 
+	        android:layout_span="3"
+	        android:clickable="false"/>
+    </TableRow>
+    
 </TableLayout>
